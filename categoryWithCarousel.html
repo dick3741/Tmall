@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="categoryWithCarousel.css" rel="stylesheet" type="text/css">
+    <script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<script>
+    $(function() {
+        var rspan = $('div.rightNav span');
+        var catEar = $('img#catEar');
+        rspan.mouseenter(function () {
+            var left = $(this).position().left;
+            var top = $(this).position().top;
+            var width = $(this).css("width");
+            var destLeft = parseInt(left) + parseInt(width) / 2;
+            catEar.css("left", destLeft);
+            catEar.css("top", top - 20);
+            catEar.fadeIn(500);
+        });
+        rspan.mouseleave(function () {
+            catEar.hide();
+        });
+    });
+</script>
+<div style="height: 50px"></div>
+<img src="http://how2j.cn/tmall/img/site/catear.png" class="catEar">
+<div class="categoryWithCarousel">
+        <div class="headBar">
+            <div class="leftNav">
+                <span class="glyphicon glyphicon-th-list"></span>
+                <span>商品分类</span>
+            </div>
+            <div class="rightNav">
+                <span><a href="#"><img src="http://how2j.cn/tmall/img/site/chaoshi.png"> </a> </span>
+                <span><a href="#"><img src="http://how2j.cn/tmall/img/site/guoji.png"> </a> </span>
+                <span><a href="#">天猫会员</a> </span>
+                <span><a href="#">品牌街</a> </span>
+                <span><a href="#">电器城</a> </span>
+                <span><a href="#">喵鲜生</a> </span>
+                <span><a href="#">医药馆</a> </span>
+                <span><a href="#">营业厅</a> </span>
+                <span><a href="#">魅力惠</a> </span>
+                <span><a href="#">飞猪旅行</a> </span>
+                <span><a href="#">苏宁易购</a> </span>
+            </div>
+        </div>
+        <div data-ride="carousel" class="carousel-of-product carousel slide" id="carousel-of-product">
+            <!-- 小圆点 -->
+            <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#carousel-of-product"></li>
+                <li data-slide-to="1" data-target="#carousel-of-product" class=""></li>
+                <li data-slide-to="2" data-target="#carousel-of-product" class=""></li>
+                <li data-slide-to="3" data-target="#carousel-of-product" class=""></li>
+                <li data-slide-to="4" data-target="#carousel-of-product" class=""></li>
+            </ol>
+            <!-- 轮播壁纸 -->
+            <div role="listbox" class="carousel-inner">
+                <div class="item active">
+                    <img src="http://how2j.cn/tmall/img/lunbo/1.jpg" class="carousel carouselImage">
+                </div>
+                <div class="item">
+                    <img src="http://how2j.cn/tmall/img/lunbo/2.jpg" class="carouselImage">
+                </div>
+                <div class="item">
+                    <img src="http://how2j.cn/tmall/img/lunbo/3.jpg" class="carouselImage">
+                </div>
+                <div class="item">
+                    <img src="http://how2j.cn/tmall/img/lunbo/4.jpg" class="carouselImage">
+                </div>
+                <div class="item">
+                    <img src="https://img.alicdn.com/simba/img/TB11LDBRFXXXXXBXVXXSutbFXXX.jpg" class="carouselImage">
+                </div>
+            </div>
+        </div>
+        <div class="carouselBackgroundDiv">
+        </div>
+    </div>
+</body>
+</html>

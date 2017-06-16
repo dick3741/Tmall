@@ -1,0 +1,53 @@
+body{
+    font-size: 12px;
+    font-family: Arial;
+}
+a{
+    color: #999999;
+}
+div.searchDiv{
+    background:rgb(255,0,54);
+    width:400px;
+    height:40px;
+    padding:1px;
+    margin:50px auto;
+    /*display:block;*/
+}
+div.searchDiv input{
+    width:275px;
+    height:36px;
+    margin:1px;
+    outline:none;
+    border:1px solid transparent;
+}
+div.searchDiv button{
+    width: 110px;
+    color:white;
+    background-color: rgb(255,0,54);
+    font-size:20px;
+    font-weight: bold;
+    border: none;
+}
+div.searchBelow{
+    margin-top:3px;
+    /*margin-left: -20px;*/
+}
+div.searchBelow span{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    color:#999999;
+}
+div.searchBelow span a:hover{
+text-decoration: none;
+    color:rgb(255,0,54)
+}
+img.logo{
+    width:250px;
+    height:160px;
+    position: absolute;
+    left:30px;
+    top:0px;
+    z-index: -1; /*当窗口足够小时，避免logo在搜索框上面*/
+}
+

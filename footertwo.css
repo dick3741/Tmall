@@ -1,0 +1,42 @@
+.footer-des{
+    font-size: 12px;
+    padding-left:200px;
+    padding-top:6px;
+    background-color: black;
+    border-top:2px solid rgb(255,0,54);
+    padding-bottom:20px;
+}
+.cat-eye{
+    padding-left:250px;
+}
+.slash{
+    color:white;
+    padding-left:1px;
+}
+.white-link,.white-link a{
+    color:white;
+    padding-right:5px;
+    margin-top:10px;
+}
+.gray-link,.gray-link a{
+    margin-top: 8px;
+    margin-right:60px;
+    color: #a4a4a4;
+}
+.copyRightYear{
+    margin-top:-3px;
+    margin-bottom:5px;
+    color:#686868;
+}
+.footer-img{
+    margin-right:10px;
+}
+.white-link a:hover{
+    text-decoration: none;
+    color:white;
+}
+
+.gray-link a:hover{
+    text-decoration: none;
+    color: #a4a4a4;
+}
